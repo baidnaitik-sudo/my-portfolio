@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Syne', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-cream-bg: #FBF9F5;
+  --color-cream-surface: #FFFFFF;
+  --color-cream-subtle: #F4EFE6;
+  --color-cream-border: #E8E2D8;
+
+  --color-charcoal-dark: #121316;
+  --color-charcoal-body: #32353E;
+  --color-charcoal-muted: #646A78;
+
+  --color-butter-light: #FEF9C3;
+  --color-butter: #FEF08A;
+  --color-butter-warm: #FDE047;
+
+  --color-electric: #2563EB;
+  --color-electric-dark: #1D4ED8;
+  --color-electric-light: #60A5FA;
+}
+
+/* Custom background grid & noise textures */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(18, 19, 22, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18, 19, 22, 0.04) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(18, 19, 22, 0.08) 1px, transparent 1px);
+}
+
+/* Polka Dots & Scrapbook Grid Utilities */
+.bg-polka-dots {
+  background-image: radial-gradient(rgba(18, 19, 22, 0.18) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.bg-polka-subtle {
+  background-image: radial-gradient(rgba(18, 19, 22, 0.14) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+
+.bg-polka-blue {
+  background-image: radial-gradient(rgba(37, 99, 235, 0.22) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+.bg-polka-yellow {
+  background-image: radial-gradient(rgba(245, 158, 11, 0.28) 2px, transparent 2px);
+  background-size: 20px 20px;
+}
+
+.bg-notebook-grid {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(37, 99, 235, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.08) 1px, transparent 1px);
+}
+
+/* Die-cut Stickers & Scrapbook Accents */
+.sticker-border {
+  border: 3px solid #ffffff;
+  box-shadow: 
+    0 4px 14px rgba(18, 19, 22, 0.14),
+    0 1px 3px rgba(18, 19, 22, 0.08);
+}
+
+.sticker-border-sm {
+  border: 2px solid #ffffff;
+  box-shadow: 
+    0 3px 8px rgba(18, 19, 22, 0.12);
+}
+
+.sticker-border-dark {
+  border: 3px solid #121316;
+  box-shadow: 
+    0 5px 16px rgba(0, 0, 0, 0.22);
+}
+
+.washi-tape-yellow {
+  background-color: rgba(254, 240, 138, 0.88);
+  border-left: 2px dashed rgba(217, 119, 6, 0.45);
+  border-right: 2px dashed rgba(217, 119, 6, 0.45);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.washi-tape-blue {
+  background-color: rgba(191, 219, 254, 0.9);
+  border-left: 2px dashed rgba(29, 78, 216, 0.4);
+  border-right: 2px dashed rgba(29, 78, 216, 0.4);
+  box-shadow: 0 2px 5px rgba(37, 99, 235, 0.12);
+}
+
+.washi-tape-rose {
+  background-color: rgba(254, 205, 211, 0.9);
+  border-left: 2px dashed rgba(225, 29, 72, 0.4);
+  border-right: 2px dashed rgba(225, 29, 72, 0.4);
+  box-shadow: 0 2px 5px rgba(225, 29, 72, 0.1);
+}
+
+.washi-tape-neutral {
+  background-color: rgba(244, 239, 230, 0.92);
+  border-left: 2px dashed rgba(100, 106, 120, 0.35);
+  border-right: 2px dashed rgba(100, 106, 120, 0.35);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.stamp-badge {
+  border: 2px dashed currentColor;
+}
+
+/* Glass effect */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-nav {
+  background: rgba(251, 249, 245, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF9F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CEBF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B09F;
+}
